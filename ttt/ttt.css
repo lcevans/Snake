@@ -1,0 +1,19 @@
+.board {
+	height: 80%;
+	width: 28%;
+}
+
+.board div div {
+	border: 1px solid black;
+	height: 32%;
+	width: 32%;
+	float: left;
+}
+
+div[mark="X"] {
+	background-color: red;
+}
+
+div[mark="O"] {
+	background-color: blue;
+}

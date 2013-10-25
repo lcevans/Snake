@@ -1,0 +1,35 @@
+.board {
+	height: 400px;
+	width: 900px;
+	background: purple;
+}
+
+.pile {
+	height: 400px;
+	width: 300px;
+	background: black;
+	float: left;
+}
+
+.pile[highlighted="true"]{
+	opacity: .5;
+}
+
+.block1 {
+	height: 50px;
+	width: 100px;
+	background: red;
+}
+
+.block2 {
+	height: 50px;
+	width: 150px;
+	background: yellow;
+}
+
+.block3 {
+	height: 50px;
+	width: 200px;
+	background: blue;
+}
+

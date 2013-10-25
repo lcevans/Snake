@@ -1,0 +1,21 @@
+<html>
+	<head>
+		<link href='snake.css' rel='stylesheet'>
+		<script src="jquery-1.10.2.js" type="text/javascript"></script>
+		<script src="underscore.js" type="text/javascript"></script>
+		<script src="snake.js"></script>
+		<script src="snakeUI.js"></script>
+		<script type="text/javascript">
+			var that = this;
+			$(function(){
+				var View = new that.SnakeLib.View($(".board"));
+				View.start();
+			});
+ 		</script>
+	</head>
+	<body>
+		<div class="board">
+
+		</div>
+	</body>
+</html>

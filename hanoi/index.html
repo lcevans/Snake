@@ -1,0 +1,28 @@
+<html>
+	<head>
+		<link href='hanoi.css' rel='stylesheet'>
+		<script src="jquery-1.10.2.js" type="text/javascript"></script>
+		<script src="underscore.js" type="text/javascript"></script>
+		<script src="hanoi.js"></script>
+		<script type="text/javascript">
+			var that = this;
+			$(function(){
+				var Hanoi = new that.Hanoi.Game();
+				Hanoi.run();
+			});
+ 		</script>
+	</head>
+	<body>
+		<div class="board">
+			<div class="pile" id="pile0">
+				<div class="block3"></div>
+				<div class="block2"></div>
+				<div class="block1"></div>
+			</div>
+			<div class="pile" id="pile1">
+			</div>
+			<div class="pile" id="pile2">
+			</div>
+		</div>
+	</body>
+</html>

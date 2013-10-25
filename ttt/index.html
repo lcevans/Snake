@@ -1,0 +1,43 @@
+<html>
+	<head>
+		<link href='ttt.css' rel='stylesheet'>
+		<script src="jquery-1.10.2.js" type="text/javascript"></script>
+		<script src="underscore.js" type="text/javascript"></script>
+		<script src="ticTacToe.js"></script>
+		<script type="text/javascript">
+			var that = this;
+			$(function(){
+				var TTT = new that.TTT.Game();
+				TTT.run();
+			});
+ 		</script>
+	</head>
+	<body>
+		<div class="board">
+			<div>
+				<div id="0-0" mark="empty" class="square">
+				</div>
+				<div id="0-1" mark="empty" class="square">
+				</div>
+				<div id="0-2" mark="empty" class="square">
+				</div>
+			</div>
+			<div>
+				<div id="1-0" mark="empty" class="square">
+				</div>
+				<div id="1-1" mark="empty" class="square">
+				</div>
+				<div id="1-2" mark="empty" class="square">
+				</div>
+			</div>
+			<div>
+				<div id="2-0" mark="empty" class="square">
+				</div>
+				<div id="2-1" mark="empty" class="square">
+				</div>
+				<div id="2-2" mark="empty" class="square">
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

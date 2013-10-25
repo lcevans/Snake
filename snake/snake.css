@@ -1,0 +1,28 @@
+.board {
+	height: 800px;
+	width: 800px;
+	background: white;
+	border: 1px solid black;
+}
+
+
+.column {
+	height: 800px;
+	width: 40px;
+	float: left;
+}
+
+.square {
+	height: 40px;
+	width: 40px;
+}
+
+.square[occupant="snake"] {
+	background: #666600;
+}
+
+.square[occupant="apple"] {
+	background:url("http://www.wideawakeinwonderland.com/wp-content/uploads/2013/09/616_1367723175.jpg");
+	background-size:40px 40px;
+}
+
