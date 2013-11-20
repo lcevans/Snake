@@ -17,7 +17,7 @@
 		var newPos = [oldPos[0]+Snake.DIRS[this.dir][0],
 									oldPos[1]+Snake.DIRS[this.dir][1]];
 		if (this.hitSelf(newPos) || this.hitWall(newPos)) {
-			alert("You dead, bro.");
+			$(".board").html('<h1 class="game-over">GAME OVER</h1>');
 			window.clearInterval(intervalID);
 		}
 		else {
@@ -25,7 +25,12 @@
 			if ((newPos[0] != board.apple[0]) || (newPos[1] != board.apple[1])) {
 				this.segments.shift();
 			} else {
+				// Hit the apple/rat
 				board.apple = null;
+				var score = $(".score").attr("data-score");
+				score++;
+				$(".score").attr("data-score", score);
+				$(".score").html("Score: " + score);
 			}
 		}
 	}

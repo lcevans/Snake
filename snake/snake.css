@@ -1,20 +1,29 @@
+html {
+	background: #CBE3A3;
+}
+
+.title, .board{
+	margin-left: 100px;
+}
+
 .board {
-	height: 800px;
-	width: 800px;
+	height: 600px;
+	width: 600px;
 	background: white;
 	border: 1px solid black;
+	float: left;
 }
 
 
 .column {
-	height: 800px;
-	width: 40px;
+	height: 600px;
+	width: 30px;
 	float: left;
 }
 
 .square {
-	height: 40px;
-	width: 40px;
+	height: 30px;
+	width: 30px;
 }
 
 .square[occupant="snake"] {
@@ -22,7 +31,21 @@
 }
 
 .square[occupant="apple"] {
-	background:url("http://www.wideawakeinwonderland.com/wp-content/uploads/2013/09/616_1367723175.jpg");
-	background-size:40px 40px;
+	background:url("Rat.jpg");
+	background-size:30px 30px;
 }
 
+.instructions {
+	margin-left: 20px;
+	width: 90% - 600px;
+	float: left;
+	display: inline-block;
+}
+
+.game-over {
+	text-align: center;
+}
+
+.score {
+	width: 90% - 600px;
+}
